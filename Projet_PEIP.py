@@ -43,7 +43,7 @@ cpt=0
 
 #fonction recursive de résolution du probleme de la tour de hanoi
 def hanoi(n,a=1,b=2,c=3):
-    global cpt
+    global cpt              #/!\ usage deprécié de variable globale /!\
     if (n > 0):
         hanoi(n-1,a,c,b)
         print( "Déplace l'anneau le plus au dessus de la tour ",a," sur la tour",c) 
